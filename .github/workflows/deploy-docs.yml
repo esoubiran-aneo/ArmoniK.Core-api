@@ -23,6 +23,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Dotnet Setup
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.x
+
+      - name: Update DocFX
+        run: dotnet tool update -g docfx
+
       - run: npm i -g pnpm @antfu/ni
 
       - name: Setup Node
@@ -38,6 +46,7 @@ jobs:
       - name: Use NODE_ENV=production
         run: echo "NODE_ENV=production" >> $GITHUB_ENV
 
+        # TODO: Add to env using GitHub (and update the docs)
       - name: Set the site URL
         run: echo "NUXT_PUBLIC_SITE_URL=https://esoubiran-aneo.github.io/ArmoniK.Core/" >> $GITHUB_ENV
 
