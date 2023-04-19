@@ -43,6 +43,9 @@ jobs:
       - name: Install dependencies
         run: cd .docs && nci
 
+      - name: Build API
+        run: docfx docfx.json
+
       - name: Use NODE_ENV=production
         run: echo "NODE_ENV=production" >> $GITHUB_ENV
 
