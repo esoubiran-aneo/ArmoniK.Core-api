@@ -9,7 +9,7 @@
           ]
         }
       ],
-      "dest": ".docs/content/api",
+      "dest": ".docs/content/3.api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -18,7 +18,7 @@
     "content": [
       {
         "files": [
-          ".docs/content/api/*.yml"
+          ".docs/content/3.api/*.yml"
         ]
       }
     ]
