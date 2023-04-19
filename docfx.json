@@ -11,7 +11,8 @@
       ],
       "dest": ".docs/content/3.api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "shouldSkipMarkup": true
     }
   ],
   "build": {
