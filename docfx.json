@@ -1,15 +1,19 @@
 {
-  "metadata": {
-    "src": [
-      {
-        "files": [
-          "**/bin/Release/**.dll"
-        ],
-        "src": "../"
-      }
-    ],
-    "dest": "api"
-  },
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "**.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
   "build": {
     "content": [
       {
